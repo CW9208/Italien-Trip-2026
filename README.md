@@ -1,20 +1,59 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🇮🇹 Italian Trip 2026
 
-# Run and deploy your AI Studio app
+這是一個使用 React + TypeScript + Vite 開發的義大利之旅 2026 行程規劃應用程式。
 
-This contains everything you need to run your app locally.
+## 🚀 專案設定 (Project Setup)
 
-View your app in AI Studio: https://ai.studio/apps/drive/1LU0nhdkeisRmC1Utt6gUFyC6kvnwZi3T
+### 前置需求
+確保你的電腦已安裝 [Node.js](https://nodejs.org/) (建議 v20 或以上)。
 
-## Run Locally
+### 1. 安裝套件
+在本機目錄執行以下指令：
 
-**Prerequisites:**  Node.js
+```bash
+npm install
+# 或使用 yarn
+yarn install
+# 或使用 pnpm
+pnpm install
+```
 
+## 💻 本機執行 (Running Locally)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+啟動開發伺服器：
+
+```bash
+npm run dev
+```
+打開瀏覽器訪問 `http://localhost:5173` 即可看到畫面。
+
+## 📦 打包與部署 (Build & Deploy)
+
+### 打包
+產生正式環境的靜態檔案 (位於 `dist` 資料夾)：
+
+```bash
+npm run build
+```
+
+### 預覽打包結果
+```bash
+npm run preview
+```
+
+### 部署
+本專案已設定 GitHub Actions，推送到 `main` 或 `master` 分支時會自動部署到 GitHub Pages。
+
+若要手動部署 (需先設定 `gh-pages` branch)：
+```bash
+npm run deploy
+```
+
+## 📁 專案結構
+- `/components`: UI 元件
+- `/constants`: 行程資料與常數
+- `/types`: TypeScript 型別定義
+- `App.tsx`: 主程式邏輯
+
+## 📝 備註
+此專案設定了 `.gitignore` 以排除敏感資訊與暫存檔。
